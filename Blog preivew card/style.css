@@ -1,0 +1,128 @@
+/* General rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* for using 10px based rem */
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+/* colors */
+.bg-primary {
+  background-color: #f4d04e;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray-950 {
+  background-color: #111;
+}
+
+.bg-gray-500 {
+  background-color: #6b6b6b;
+}
+
+.text-gray-950 {
+  color: #111;
+}
+
+.text-gray-500 {
+  color: #6b6b6b;
+}
+
+/* text */
+.text-sm {
+  font-size: 1.4rem;
+}
+
+.text-md {
+  font-size: 1.6rem;
+}
+
+.text-xl {
+  font-size: 2rem;
+}
+
+.line-height_md {
+  line-height: 150%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* main */
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Privew card */
+.card-blog-privew {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 0 2.4rem;
+  padding: 2.4rem;
+  width: 32.7rem;
+  border-radius: 20px;
+
+  /* visual */
+  border: 1px solid #111;
+  box-shadow: 8px 8px 0 #000 ;
+}
+
+
+.card-header img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* card body */
+.card-tags {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.card-tag {
+  padding: 0.4rem 1.2rem;
+  border-radius: 4px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.card-footer img {
+    width: 3.2rem;
+    height: 3.2rem;
+
+}
+
+/* Desktop and above screens */
+@media (min-width: 1024px) {
+    .card-blog-privew {
+        width: 38.4rem;
+    }
+}
